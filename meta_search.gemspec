@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "meta_search"
-  s.version = "1.1.3"
+  s.version = "1.1.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Ernie Miller"]
@@ -69,20 +69,20 @@ Gem::Specification.new do |s|
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<activerecord>, [">= 3.1"])
       s.add_runtime_dependency(%q<activesupport>, [">= 3.1"])
-      s.add_runtime_dependency(%q<polyamorous>, ["~> 0.5.0"])
+      s.add_runtime_dependency(%q<polyamorous>)
       s.add_runtime_dependency(%q<actionpack>, [">= 3.1"])
       s.add_development_dependency(%q<shoulda>, ["~> 2.11"])
     else
       s.add_dependency(%q<activerecord>, [">= 3.1"])
       s.add_dependency(%q<activesupport>, [">= 3.1"])
-      s.add_dependency(%q<polyamorous>, ["~> 0.5.0"])
+      s.add_dependency(%q<polyamorous>)
       s.add_dependency(%q<actionpack>, [">= 3.1"])
       s.add_dependency(%q<shoulda>, ["~> 2.11"])
     end
   else
     s.add_dependency(%q<activerecord>, [">= 3.1"])
     s.add_dependency(%q<activesupport>, [">= 3.1"])
-    s.add_dependency(%q<polyamorous>, ["~> 0.5.0"])
+    s.add_dependency(%q<polyamorous>)
     s.add_dependency(%q<actionpack>, [">= 3.1"])
     s.add_dependency(%q<shoulda>, ["~> 2.11"])
   end
